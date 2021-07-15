@@ -1,0 +1,128 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+
+    position: sticky;
+    top:0;
+    background-color: black;
+}
+.nav{
+    /*background-color: rgba(255, 255, 255, 0.678);*/
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+.subnav{
+    display: flex;
+    width:30%;
+    justify-content: space-around;
+}
+.logo{
+    width:100%;
+    align-items: center;
+    
+}
+.logo img{
+    border:0px solid black;
+    border-radius: 100px;
+}
+.available{
+    width:100%;
+}
+.centerkro{
+    width:100%;
+    /*background-color: black;*/
+}
+.headava{
+    margin:auto;
+    width:fit-content;
+    padding: 1em;
+    /*background-color: white;*/
+    border: 0px solid black;
+    border-radius: 50%;
+    text-align: center;
+}
+.avaimage{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+figure{
+    height: 270px;
+    width:270px;
+    object-fit: cover;
+}
+figure img{
+    width:100%;
+    height:90%;
+    object-fit: fill;
+}
+h2{
+    font-size: 3em;
+}
+h3{
+    font-size: 1.5em;
+}
+.figurecaption{
+    margin-top:-8px;
+    margin-bottom: 32px;
+    padding:10px;
+    color:white;
+    text-align:center;
+    background-color: rgb(24, 23, 23);
+    font-size:1.2em;
+}
+.wraplink{
+    width:305px;
+    height: 350px;
+    line-height: 2.5em;
+    font-size: 2em;
+    margin:auto;
+    text-align: center;
+    background-color: rgb(240, 248, 255,0.7);
+    border-radius: 10%;
+}
+ul{
+    list-style-type: none;
+    list-style-position: inside;
+}
+a{
+    color:whitesmoke;
+}
+label{
+    font-size:1.5em;
+}
+.formarea{
+    width:fit-content;
+    margin-left: 50px;
+}
+input[type="submit"]{
+    border:1px solid grey;
+    box-shadow: 2px 2px grey ;
+    cursor:grab;
+}
+input,textarea{
+    color:black;
+    background-color: white;
+    border:0px solid white;
+    border-radius:4px;
+    font-size: 1.5em;
+    margin:0.8em 0;
+    padding: 8px 8px;
+}
+.contact{
+    width:fit-content;
+    margin-left:50px;
+}
