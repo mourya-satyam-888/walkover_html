@@ -24,8 +24,9 @@ header{
 }
 .subnav{
     display: flex;
-    width:30%;
+    width:60%;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .logo{
     width:100%;
@@ -34,7 +35,8 @@ header{
 }
 .logo img{
     border:0px solid black;
-    border-radius: 100px;
+    width:60%;
+    border-radius: 10%;
 }
 .available{
     width:100%;
@@ -103,6 +105,7 @@ a{
 }
 label{
     font-size:1.5em;
+    cursor:grab;
 }
 .formarea{
     width:fit-content;
@@ -126,7 +129,53 @@ input,textarea{
     width:fit-content;
     margin-left:50px;
 }
-@media  screen and(max-width:600px) {
+.iconnav{
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    display:none;
+}
+/*#navcheck{
+    display:none;
+}*/
+@media  screen and (max-width:700px) {
+    h2{
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1em;
+    }
+    label{
+        font-size:1em;
+    }
+    input,textarea{
+        color:black;
+        background-color: white;
+        border:0px solid white;
+        border-radius:2px;
+        font-size: 1em;
+        margin:0.5em 0;
+        padding: 4px 4px;
+    }
+    .subnav{
+        float:left;
+    }
+    #checkbox{
+        display: block;
+        color:white;
+    }
+    .iconnav{
+        display:flex;
+        flex-direction: column;
+    }
     
-    
+}
+#navcheck:checked ~ * .subnav{
+    color:black;
+}
+@media  screen and (max-width:352px){
+    .subnav{
+        display: none;
+    }
 }
